@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
+* {
+  color: #fffffff0;
+  font-family: "SUIT", "Noto Sans KR", sans-serif;
+}
+
+body {
+  background-color: black;
+  font-family: "SUIT", "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h3,
+h4 {
+  font-size: 18px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  text-align: start;
+}
+
+li {
+  padding-bottom: 20px;
+}
+
+a {
+  color: #fffffff0;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Header */
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(8px);
+}
+
+.Header a {
+  text-decoration: none;
+}
+
+.Header .Header-main h1 {
+  display: inline-block;
+  letter-spacing: 5px;
+  padding: 10px 20px 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff90;
+}
+
+.Header .menu ul {
+  display: inline;
+  box-sizing: border-box;
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.Header .menu li {
+  display: inline;
+}
+
+.Header .menu a {
+  display: inline-block;
+  padding: 10px 20px 10px 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff90;
+}
+
+.Header .menu a:hover {
+  color: white;
+  transition: 0.3s all ease;
+}
+
+/* Info */
+
+.Info ul {
+  list-style: none;
+  text-align: start;
+}
+
+.Info li {
+  padding-bottom: 20px;
+}
+
+.Info-content {
+  padding-top: 110px;
+}
+
+.Info .Info-content div {
+  border-bottom: 1px solid #d0cdcd37;
+  padding-top: 30px;
+}
+
+.Info-link a:hover {
+  color: rgba(19, 228, 235, 0.91);
+  transition: 0.3s all ease;
+}
+
+/* Project */
+
+.Project {
+  text-align: start;
+}
+
+.Project .Project-item {
+  padding-top: 110px;
+}
+
+.Project .Project-item div {
+  border-bottom: 1px solid #d0cdcd37;
+  padding-top: 30px;
+}
+
+.Project .Project-item a:hover {
+  color: rgba(19, 228, 235, 0.91);
+  transition: 0.3s all ease;
+}
+
+.Project-img {
+  padding-top: 20px;
+  width: 600px;
+  border-bottom: none;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 41px;
+  width: 40px;
+  height: 40px;
+  color: black;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../public/assets/up-icon.png");
+  background-size: 100%;
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+/* Contact */
+
+.Contact {
+  padding-top: 140px;
+  font-size: 18px;
+}
+
+.Contact a:hover {
+  color: rgba(19, 228, 235, 0.91);
+  transition: 0.3s all ease;
+}
+
+/* IMG */
+
+.carousel-inner {
+  width: 1000px;
+  height: 100%;
+}
+
+.carousel slide {
+  height: 1000px;
+}
+
+.carousel-indicators,
+.carousel-control-prev,
+.carousel-control-next {
+  position: fixed;
+}
