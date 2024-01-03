@@ -1,7 +1,33 @@
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
+import { useEffect, useState } from "react";
 
 const Project = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  const scrollToTop = () => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    const handleShowButton = () => {
+      if (window.scrollY > 100) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    console.log(window.scrollY);
+    window.addEventListener("scroll", handleShowButton);
+    return () => {
+      window.removeEventListener("scroll", handleShowButton);
+    };
+  }, []);
+
   return (
     <div className="Project">
       <Header />
@@ -32,7 +58,7 @@ const Project = () => {
           </ul>
         </div>
         <div>
-          <h3>🧸 my web</h3>
+          <h3>🧸 MY WEB</h3>
           <h4>나의 정보, 나만의 web</h4>
           <a href="https://github.com/yzinnie/React-myweb.git">
             https://github.com/yzinnie/React-myweb.git
@@ -55,14 +81,34 @@ const Project = () => {
             <li>Git</li>
           </ul>
         </div>
+        <div>
+          <h3>😎 My Diary of Emotions</h3>
+          <h4>오늘 기분은 어땠어?</h4>
+          <a href="https://yzinnie-react-project.firebaseapp.com/">
+            https://yzinnie-react-project.firebaseapp.com/
+            <br />
+          </a>
+          <p>React JS Project - 나의 감정 기록 일기장</p>
+          <img src="../assets/emotiondiary.png" />
+          <p>구현 기능</p>
+          <ul>
+            <li>오늘의 일기를 5가지 감정들과 함께 기록합니다.</li>
+            <li> 일기 작성, 수정, 삭제 기능</li>
+            <li> 일기 정렬 기능 (최신순, 감정순)</li>
+            <li>react-router-dom 사용</li>
+          </ul>
+          <p>사용한 기술스택</p>
+          <ul>
+            <li>React</li>
+            <li>Git</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
       </div>
 
-      <button
-        className="top-btn"
-        onClick={() => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }}
-      ></button>
+      {showButton && (
+        <button className="top-btn" onClick={scrollToTop}></button>
+      )}
     </div>
   );
 };
