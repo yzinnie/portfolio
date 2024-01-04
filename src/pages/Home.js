@@ -1,5 +1,6 @@
 import Header from "../components/Header";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   useEffect(() => {
@@ -10,6 +11,22 @@ const Home = () => {
   return (
     <div className="Home">
       <Header />
+      <TypeAnimation
+        sequence={[
+          "We produce food for Mice",
+          1000,
+          "We produce food for Hamsters",
+          1000,
+          "We produce food for Guinea Pigs",
+          1000,
+          "We produce food for Chinchillas",
+          1000,
+        ]}
+        speed={50}
+        wrapper="span"
+        cursor={true}
+        repeat={Infinity}
+      />
     </div>
   );
 };

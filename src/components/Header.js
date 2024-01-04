@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { ThemeContext } from "./ThemeContext";
 
 const Header = () => {
   return (

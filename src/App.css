@@ -211,3 +211,49 @@ p {
 }
 
 /* HOME */
+/* 
+.Home .main {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 500px;
+}
+
+.Home .animation span {
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.Home .animation .two_text {
+  color: #2aff29;
+}
+
+.Home .two_text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  border-left: 2px solid #bce649bb;
+  animation: animate 3s steps(5) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 1px);
+  }
+
+  100% {
+    left: 0%;
+  }
+} */
+
+.Home .index-module_type__E-SaG {
+  padding-top: 500px;
+  display: inline-block;
+}
