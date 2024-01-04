@@ -1,6 +1,12 @@
-import Header from '../components/Header';
+import Header from "../components/Header";
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `Contact `;
+  }, []);
+
   return (
     <div className="Contact">
       <Header />

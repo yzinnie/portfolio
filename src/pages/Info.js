@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
+import { useEffect } from "react";
 
 const Info = () => {
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = ` INFO `;
+  }, []);
+
   return (
     <div className="Info">
       <Header />

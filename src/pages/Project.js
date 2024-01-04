@@ -3,6 +3,11 @@ import Header from "../components/Header";
 import { useEffect, useState } from "react";
 
 const Project = () => {
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `Project `;
+  }, []);
+
   const [showButton, setShowButton] = useState(false);
 
   const scrollToTop = () => {
@@ -39,6 +44,7 @@ const Project = () => {
             https://yzinnie.github.io/JS-Project-TODO/
           </a>
           <p>OpenWeatherMap의 API를 사용해 날씨 정보를 알려주는 투두리스트</p>
+          <img src="../assets/project1.png" alt="project1" />
           <p>구현 기능</p>
           <ul>
             <li>
@@ -78,6 +84,7 @@ const Project = () => {
           <p>사용한 기술스택</p>
           <ul>
             <li>React</li>
+            <li>Firebase</li>
             <li>Git</li>
           </ul>
         </div>
@@ -89,10 +96,10 @@ const Project = () => {
             <br />
           </a>
           <p>React JS Project - 나의 감정 기록 일기장</p>
-          <img src="../assets/emotiondiary.png" />
+          <img src="../assets/emotiondiary.png" alt="emotiondiary" />
           <p>구현 기능</p>
           <ul>
-            <li>오늘의 일기를 5가지 감정들과 함께 기록합니다.</li>
+            <li>오늘의 일기를 5가지 감정들과 함께 기록</li>
             <li> 일기 작성, 수정, 삭제 기능</li>
             <li> 일기 정렬 기능 (최신순, 감정순)</li>
             <li>react-router-dom 사용</li>
@@ -100,8 +107,8 @@ const Project = () => {
           <p>사용한 기술스택</p>
           <ul>
             <li>React</li>
-            <li>Git</li>
             <li>Firebase</li>
+            <li>Git</li>
           </ul>
         </div>
       </div>
