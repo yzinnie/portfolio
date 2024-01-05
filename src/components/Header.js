@@ -5,7 +5,7 @@ const Header = () => {
     <div className="Header">
       <div className="Header-main">
         <h1>
-          <Link to={"/"}>Jihyun Yoon</Link>
+          <Link to={"/"}>J</Link>
         </h1>
       </div>
       <div className="menu">

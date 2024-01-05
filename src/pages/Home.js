@@ -13,13 +13,13 @@ const Home = () => {
       <Header />
       <TypeAnimation
         sequence={[
-          "We produce food for Mice",
+          "내가 꿈꾸는 것은 함께 사는 세상",
           1000,
-          "We produce food for Hamsters",
+          "내가 꿈꾸는 것은 지구의 행복",
           1000,
-          "We produce food for Guinea Pigs",
+          "내가 꿈꾸는 것은 당신의 평화",
           1000,
-          "We produce food for Chinchillas",
+          "We are all calm and peaceful just by our existence.",
           1000,
         ]}
         speed={50}
