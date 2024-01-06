@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-import Header from "../components/Header";
-import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
+import Header from '../components/Header';
+import { useEffect, useState } from 'react';
 
 const Project = () => {
   useEffect(() => {
-    const titleElement = document.getElementsByTagName("title")[0];
+    const titleElement = document.getElementsByTagName('title')[0];
     titleElement.innerHTML = `Project `;
   }, []);
 
@@ -13,7 +13,7 @@ const Project = () => {
   const scrollToTop = () => {
     window.scroll({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
@@ -26,10 +26,9 @@ const Project = () => {
       }
     };
 
-    console.log(window.scrollY);
-    window.addEventListener("scroll", handleShowButton);
+    window.addEventListener('scroll', handleShowButton);
     return () => {
-      window.removeEventListener("scroll", handleShowButton);
+      window.removeEventListener('scroll', handleShowButton);
     };
   }, []);
 
@@ -76,7 +75,7 @@ const Project = () => {
           <ul>
             <li>
               img web 구현
-              <Link to={"/img"}> What i like-Trip 🏄🏻‍♀</Link>
+              <Link to={'/img'}> What i like-Trip 🏄🏻‍♀</Link>
             </li>
             <li>화면 상단이동 아이콘 생성 - Window: scrollTo() method</li>
             <li>react-router-dom 사용</li>
