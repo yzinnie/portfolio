@@ -229,9 +229,15 @@ p {
     height: 200px;
   }
   .Header .menu a {
-    padding: 8px;
+    padding: 6px;
   }
   .w-100 {
     width: 500px;
+  }
+  .Project {
+    text-align: start;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
