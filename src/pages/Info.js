@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-import Header from "../components/Header";
-import { useEffect } from "react";
+import { Link } from 'react-router-dom';
+import Header from '../components/Header';
+import { useEffect } from 'react';
 
 const Info = () => {
   useEffect(() => {
-    const titleElement = document.getElementsByTagName("title")[0];
+    const titleElement = document.getElementsByTagName('title')[0];
     titleElement.innerHTML = ` INFO `;
   }, []);
 
@@ -16,9 +16,9 @@ const Info = () => {
           <h4>My info</h4>
           <ul>
             <li>Name : 윤지현 (Jihyun Yoon)</li>
-            <li>Birth : 1999. 02. 22 🐰</li>
+            {/* <li>Birth : 1999. 02. 22 🐰</li> */}
             <li>Major: Computer Software</li>
-            <li>Tech Stack : Html, CSS, JavaScript, React</li>
+            <li>Tech Stack : HTML, CSS, JavaScript, React</li>
             <li>Use Tool : VisualStudioCode, Git, Github, Figma, Bootstrap</li>
           </ul>
         </div>
@@ -27,7 +27,7 @@ const Info = () => {
           <ul>
             <li>
               Trip 🏄🏻‍♀
-              <Link to={"/img"}> 여행하며 찍었던 사진들</Link>
+              <Link to={'/img'}> 여행하며 찍었던 사진들</Link>
             </li>
             <li>COFFEE ☕</li>
             <li>

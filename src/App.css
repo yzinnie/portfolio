@@ -187,7 +187,9 @@ p {
   padding-top: 140px;
   font-size: 18px;
 }
-
+.Contact p {
+  font-weight: 400;
+}
 .Contact p a:hover {
   color: rgba(19, 228, 235, 0.91);
   transition: 0.3s all ease;
