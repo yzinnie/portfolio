@@ -15,7 +15,6 @@
 #### Test & deploy
    <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"> 
 
-## Architecture
-#### Directory Structure
+
 
 
