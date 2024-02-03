@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 import React, { useEffect } from 'react';
-import { TypeAnimation } from 'react-type-animation';
+import Info from '../components/Info';
 
 const Home = () => {
   useEffect(() => {
@@ -11,16 +11,7 @@ const Home = () => {
   return (
     <div className="Home">
       <Header />
-      <TypeAnimation
-        sequence={[
-          'We are all calm and peaceful just by our existence. ',
-          1000,
-        ]}
-        speed={50}
-        wrapper="span"
-        cursor={true}
-        repeat={Infinity}
-      />
+      <Info />
     </div>
   );
 };

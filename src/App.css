@@ -1,21 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
 * {
-  color: #fff;
-  font-family: 'SUIT', 'Noto Sans KR', sans-serif;
+  color: #000;
+  font-family: 'Crimson Text', serif;
 }
 
 body {
-  background-color: black;
-  font-family: 'SUIT', 'Noto Sans KR', sans-serif;
-  font-weight: 600;
+  /* background-color: rgb(255, 255, 255); */
+  font-family: 'Crimson Text', serif;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   -ms-overflow-style: none;
 }
 
@@ -43,10 +36,6 @@ li {
   padding-bottom: 20px;
 }
 
-a {
-  color: #fffffff0;
-}
-
 p {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -71,6 +60,7 @@ p {
 
 .Header a {
   text-decoration: none;
+  color: black;
 }
 
 .Header .Header-main h1 {
@@ -79,7 +69,6 @@ p {
   padding: 10px 20px 10px 40px;
   font-size: 15px;
   font-weight: 1000;
-  color: #ffffff90;
 }
 
 .Header .menu ul {
@@ -103,64 +92,53 @@ p {
   padding: 10px 20px 10px 30px;
   font-size: 18px;
   font-weight: 400;
-  color: #ffffff90;
-}
-
-.Header .menu a:hover {
-  color: white;
-  transition: 0.3s all ease;
 }
 
 /* Info */
 
-.Info ul {
-  list-style: none;
-  text-align: start;
-}
-
-.Info li {
-  padding-bottom: 20px;
-}
-
-.Info-content {
+.Info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   padding-top: 110px;
+  font-size: 18px;
+  list-style: none;
 }
 
 .Info .Info-content div {
-  border-bottom: 1px solid #d0cdcd37;
+  border: 1px solid black;
   padding-top: 30px;
+  width: 483px;
 }
 
 .Info-link a:hover {
-  color: rgba(19, 228, 235, 0.91);
+  color: #f6b3ffe8;
   transition: 0.3s all ease;
+}
+
+.Info-molla {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  width: 483px;
 }
 
 /* Project */
 
 .Project {
-  text-align: start;
-}
-
-.Project .Project-item {
+  display: flex;
+  flex-direction: row-reverse;
   padding-top: 110px;
+  padding-right: 30px;
 }
 
-.Project .Project-item div {
-  border-bottom: 1px solid #d0cdcd37;
-  padding-top: 30px;
+.Project div {
+  padding-right: 30px;
 }
 
-.Project .Project-item a:hover {
-  color: rgba(19, 228, 235, 0.91);
+.Project a:hover {
+  color: #f6b3ffe8;
   transition: 0.3s all ease;
-}
-
-.Project .Project-item img {
-  padding-top: 20px;
-  width: 600px;
-  height: 400px;
-  border-bottom: none;
 }
 
 .top-btn {
@@ -187,11 +165,9 @@ p {
   padding-top: 140px;
   font-size: 18px;
 }
-.Contact p {
-  font-weight: 400;
-}
+
 .Contact p a:hover {
-  color: rgba(19, 228, 235, 0.91);
+  color: #f6b3ffe8;
   transition: 0.3s all ease;
 }
 
@@ -212,11 +188,7 @@ p {
   position: fixed;
 }
 
-/* HOME */
-
-.Home .index-module_type__E-SaG {
-  padding-top: 500px;
-  display: inline-block;
+.index-module_type__E-SaG {
   font-size: 18px;
 }
 
@@ -226,20 +198,10 @@ p {
   h4 {
     font-size: 15px;
   }
-  .Project .Project-item img {
-    width: 300px;
-    height: 200px;
-  }
   .Header .menu a {
     padding: 6px;
   }
   .w-100 {
     width: 500px;
-  }
-  .Project {
-    text-align: start;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
