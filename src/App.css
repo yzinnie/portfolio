@@ -99,28 +99,37 @@ p {
 .Info {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  flex-wrap: wrap;
   padding-top: 110px;
   font-size: 18px;
   list-style: none;
 }
 
-.Info .Info-content div {
+.Info div {
   border: 1px solid black;
   padding-top: 30px;
   width: 483px;
 }
 
-.Info-link a:hover {
-  color: #f6b3ffe8;
+.Info a {
+  color: #ef87fde8;
+}
+
+.Info a:hover {
+  color: #000000;
   transition: 0.3s all ease;
 }
 
-.Info-molla {
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  width: 483px;
+.Info div:nth-child(2) {
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.Info div:nth-child(4) {
+  background-color: rgba(146, 255, 219, 0.195);
+  border-top: none;
+  border-right: none;
 }
 
 /* Project */

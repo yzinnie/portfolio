@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import Img from './pages/Img';
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/img" element={<Img />} />
         </Routes>
       </div>
     </BrowserRouter>
