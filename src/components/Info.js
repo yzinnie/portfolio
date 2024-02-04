@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Info = () => {
   return (
@@ -101,7 +101,7 @@ const Info = () => {
           <li>
             portfolio
             <br />
-            <a href="https://yzinnie-react.web.app/">This page</a>
+            <a href="https://portfolio-jj.web.app/">This page</a>
             <br />
             <a href="https://github.com/yzinnie/portfolio">github</a>
           </li>
