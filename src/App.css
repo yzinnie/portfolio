@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
 * {
   color: #000;
@@ -6,7 +7,6 @@
 }
 
 body {
-  /* background-color: rgb(255, 255, 255); */
   font-family: 'Crimson Text', serif;
   text-align: center;
   -ms-overflow-style: none;
@@ -101,19 +101,23 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 110px;
-  font-size: 18px;
+  font-size: 20px;
   list-style: none;
 }
 
 .Info div {
   border: 1px solid black;
   padding-top: 30px;
-  width: 483px;
-  cursor: pointer;
+  width: 100vw;
 }
 
 .Info a {
   color: #ef87fde8;
+}
+
+.Info p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 17px;
 }
 
 .Info a:hover {
@@ -124,13 +128,13 @@ p {
 .Info div:nth-child(2) {
   border-left: none;
   border-bottom: none;
-  border-right: none;
+  border-top: none;
 }
 
 .Info div:nth-child(4) {
   background-color: rgba(146, 255, 219, 0.195);
   border-top: none;
-  border-right: none;
+  border-bottom: none;
 }
 
 /* Project */
@@ -179,27 +183,6 @@ p {
 .Contact p a:hover {
   color: #f6b3ffe8;
   transition: 0.3s all ease;
-}
-
-/* IMG */
-
-.carousel-inner {
-  width: 1000px;
-  height: 100%;
-}
-
-.carousel slide {
-  height: 1000px;
-}
-
-.carousel-indicators,
-.carousel-control-prev,
-.carousel-control-next {
-  position: fixed;
-}
-
-.index-module_type__E-SaG {
-  font-size: 18px;
 }
 
 @media screen and (max-width: 576px) {

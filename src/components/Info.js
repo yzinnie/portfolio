@@ -1,27 +1,24 @@
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
+const styles = {
+  WebkitLineClamp: 1,
+  WebkitBoxOrient: 'vertical',
+  overflow: 'hidden',
+  display: '-webkit-box',
+};
 
 const Info = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="Info">
       <div>
         <ul>
-          <li>JIHYUN YOON</li>
-          <li>
-            <TypeAnimation
-              sequence={[
-                'We are all calm and peaceful just by our existence. ',
-                1000,
-              ]}
-              speed={50}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-            />
-          </li>
+          <li>portfolio</li>
         </ul>
       </div>
-
       <div>
         <ul>
           <li>
@@ -35,13 +32,25 @@ const Info = () => {
             kakao <br /> airkorea <br />
             openweathermap
             <br />
-            <a href="https://github.com/yzinnie/SAN-CHECK">github</a>
-            <br />
             javascript
             <br />
             react
             <br />
             npm
+            <br />
+            <a href="https://github.com/yzinnie/SAN-CHECK">github</a>
+            <br />
+            <p style={isOpen ? null : styles}>
+              프로젝트설명 <br />
+              프로젝트설명프로젝트설명프로젝트설명프로젝트설명 <br />
+              프로젝트 설명프로젝트설명프로젝트설명 <br />
+              프로젝트설명프로젝트설명프로젝트설명 <br />
+              프로젝트설명프로젝 <br />
+              트설명프로젝트설명프로젝트설명
+            </p>
+            <button onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? 'close' : 'read more'}
+            </button>
           </li>
         </ul>
       </div>
