@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
 
 * {
   color: #000;
@@ -117,7 +117,13 @@ p {
 
 .Info p {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 17px;
+  font-size: 16px;
+}
+
+.Info button {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .Info a:hover {
